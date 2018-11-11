@@ -7,7 +7,7 @@ val cumple: String = "${strg} y cumple ${edad + 1} años"
 val larga = """
 
     |HOLA COMO ESTAN
-    |AMIGOS DE YOUTUBE
+    |AMIGOS DE KOTLIN
     |ESPERO
     |QUE TENGAN
     |UN BUEN DÍA
