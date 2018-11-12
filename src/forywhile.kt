@@ -2,9 +2,9 @@ import org.omg.CORBA.Object
 
 fun main(args: Array<String>) {
     var Warriors = mutableListOf<Any>()
-    val Goku = Guerrero<Any>("Goku","Saiyan",true)
-    val Krillin = Guerrero<Any>("Krillin","Humano",true)
-    val Freezer = Guerrero<Any>("Freezer","Raza de Freezer",false)
+    val Goku = Guerrero("Goku","Saiyan",true)
+    val Krillin = Guerrero("Krillin","Humano",true)
+    val Freezer = Guerrero("Freezer","Raza de Freezer",false)
     Warriors.run {
         add(Goku)
         add(Freezer)

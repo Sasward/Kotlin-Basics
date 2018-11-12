@@ -7,19 +7,19 @@ fun main(args: Array<String>) {
     println(lista)
     println("-----------------------------------")
     // Se crea un objeto Goku de la Clase Guerrero
-    var Goku = Guerrero<Any>("Goku","Sayayin", true)
+    var Goku = Guerrero("Goku","Sayayin", true)
     //Implementando la Extension Function se pone a gritar a Goku
 
-    var Freezer = Guerrero<Any>("Freezer", "Raza de Freezer",false)
+    var Freezer = Guerrero("Freezer", "Raza de Freezer",false)
     Goku.gritar(Goku.nombre,Goku.esBueno)
     Freezer.gritar(Freezer.nombre,Freezer.esBueno)
 
 }
 
-data class Guerrero<Any>(var nombre: String, var raza: String, var esBueno: Boolean){}
+data class Guerrero(var nombre: String, var raza: String, var esBueno: Boolean){}
 
 //Extension function para todos los objetos de la clase Guerrero
-fun <Any> Guerrero<Any>.gritar(nombre: String,esBueno: Boolean){
+fun  Guerrero.gritar(nombre: String,esBueno: Boolean){
     if (esBueno) kotlin.io.println("Soy ${this.nombre} y vengo a acabar a los malos")
     else println("Soy ${this.nombre} y vengo a destruir a los sayayines")
 }
